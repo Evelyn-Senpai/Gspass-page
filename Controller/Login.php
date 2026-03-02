@@ -9,7 +9,7 @@ if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']
         unset($_SESSION['senha']);
         echo "<script>
         alert('SENHA OU EMAIL INCORRETOS');
-        window.location = '../View/GsPass.html'
+        window.location = '../View/index.html'
         </script>";
     }else{
         $_SESSION['email'] = $email;
@@ -17,6 +17,6 @@ if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']
         header('Location: ../View/MinhasSenhas.html');
     }
 }else{
-    header('Location: ../View/GsPass.html');
+    header('Location: ../View/index.html');
 }
 ?>

@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
     $senha = $_POST['senha'];
     if(VerificarUsuario($email) == 0 ){
         CadastrarUsuario($nome,$datadenascimento,$email,$telefone,$senha);
-        header("Location:../View/GsPass.html");
+        header("Location:../View/index.html");
     }else{
         ?>
         <script>
